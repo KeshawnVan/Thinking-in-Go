@@ -21,4 +21,8 @@ func main() {
 			break
 		}
 	}
+	array := []int{100, 101, 102}
+	for i, n := range array {
+		println(i, ":", n)
+	}
 }
