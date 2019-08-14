@@ -12,10 +12,14 @@ type manager struct {
 	title string
 }
 
+func (u user) ToString() string {
+	return fmt.Sprintf("%+v", u)
+}
 func main() {
 	var m manager
 	m.name = "Tom"
 	m.age = 11
 	m.title = "CTO"
 	fmt.Println(m)
+	println(m.ToString())
 }
